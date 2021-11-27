@@ -17,7 +17,7 @@ class CreateShortTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('url');
-            $table->unique('short');
+            $table->string('short')->unique();
             $table->integer('hint')->default(0);
             $table->timestamps();
         });
