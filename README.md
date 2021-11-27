@@ -24,12 +24,18 @@ This project is a URL shortener that counts how many access a shortened link rec
 - Start the server with `php -S localhost:8000 -t public`.
 
 ##Endpoints
+
 ####/short - POST
+
 This **POST** endpoint receives a string param named `url` and inserts a new row on the database. This URL will receive a token to serve as a short link, and then, get the title information of the received URL.
 
+
 ####/short/{short} - GET
+
 This **GET** endpoint receives a string param named `short` and gets the original URL. This `short` is the token created on `/short - POST` endpoint, that will return the original url of this shortened link. Every request we increment in +1 the column `hint` on the database.
 
+
 ####/short/rank - GET
+
 This **GET** endpoint shows the top 100 most frequently accessed URLs.
 
