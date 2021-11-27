@@ -16,7 +16,7 @@ This project is a URL shortener that counts how many access a shortened link rec
 
 ##Quick Start
 - You need to have a working PHP environment with versions over 7.X that also run Laravel/Lumen framework.
-- Clone the project from the github `git clone`.
+- Clone the project from the github `git clone https://github.com/Matheussg42/urlShortener.git`.
 - Execute the command `composer install`.
 - Create a database for the project.
 - Rename `.env.example` to `.env` and edit the database information.
